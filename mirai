@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+java -cp "$CLASSPATH:./onekey-libraries/*" net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader

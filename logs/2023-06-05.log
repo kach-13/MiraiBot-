@@ -1,0 +1,1273 @@
+2023-06-05 14:58:55 I/main: Starting mirai-console...
+2023-06-05 14:58:55 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 14:58:55 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 14:58:55 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 14:58:55 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 14:58:56 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 14:58:56 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 14:58:56 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 14:58:56 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 14:58:56 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 14:58:56 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 14:58:56 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 14:58:56 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 14:58:56 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 14:58:56 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 14:58:56 I/main: 3 plugin(s) enabled.
+2023-06-05 14:58:56 I/main: mirai-console started successfully.
+2023-06-05 14:58:56 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Bad file descriptor
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)
+	... 1 more
+
+2023-06-05 14:58:56 W/console: Closing input service...
+2023-06-05 15:02:43 I/main: Starting mirai-console...
+2023-06-05 15:02:43 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:02:43 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:02:43 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:02:43 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:02:44 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:02:44 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:02:44 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:02:44 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:02:44 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:02:44 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:02:44 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:02:44 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:02:44 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:02:44 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:02:44 I/main: 3 plugin(s) enabled.
+2023-06-05 15:02:44 I/main: mirai-console started successfully.
+2023-06-05 15:04:07 I/main: Starting mirai-console...
+2023-06-05 15:04:07 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:04:07 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:04:07 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:04:07 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:04:08 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:04:08 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:04:08 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:04:08 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:04:08 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:04:08 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:04:08 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:04:08 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:04:08 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:04:08 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:04:08 I/main: 3 plugin(s) enabled.
+2023-06-05 15:04:08 I/main: Auto-login 2324776498, protocol: ANDROID_WATCH, heartbeatStrategy: STAT_HB
+2023-06-05 15:04:09 E/Bot.2324776498: Failed to load account secrets from local cache. Invalidating cache...
+net.mamoe.mirai.internal.utils.crypto.DecryptionFailedException
+	at net.mamoe.mirai.internal.utils.crypto.TEA.fail(TEA.kt:299)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption$decrypt(TEA.kt:275)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption(TEA.kt:295)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt(TEA.kt:319)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt$default(TEA.kt:318)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecretsImpl(AccountSecretsManager.kt:196)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecrets(AccountSecretsManager.kt:190)
+	at net.mamoe.mirai.internal.network.components.CombinedAccountSecretsManager.getSecrets(AccountSecretsManager.kt:238)
+	at net.mamoe.mirai.internal.network.components.AccountSecretsManagerKt.getSecretsOrCreate(AccountSecretsManager.kt:150)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.createClient(BotClientHolder.kt:42)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.access$createClient(BotClientHolder.kt:26)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:30)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:30)
+	at net.mamoe.mirai.utils.LateinitMutableProperty.getValue(LateinitMutableProperty.kt:47)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.getClient(BotClientHolder.kt:30)
+	at net.mamoe.mirai.internal.network.qimei.QimeiKt.requestQimei(Qimei.kt:43)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:207)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] @see https://github.com/project-mirai/mirai-login-solver-selenium
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] @see https://docs.mirai.mamoe.net/mirai-login-solver-selenium/
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] 或者输入 helper 来使用 TxCaptchaHelper 完成滑动验证码
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] Or type helper to resolve slider captcha with TxCaptchaHelper.apk
+2023-06-05 15:04:10 W/Bot.2324776498: [SliderCaptcha] TxCaptchaHelper 的在线服务疑似被屏蔽，可能无法使用。TxCaptchaHelper 现已无法满足登录QQ机器人，请在以下链接下载全新的验证器
+2023-06-05 15:04:10 W/Bot.2324776498: [SliderCaptcha] The service of TxCaptchaHelper might be blocked. We recommend you to download the new login solver plugin in below link.
+2023-06-05 15:04:10 W/Bot.2324776498: [SliderCaptcha] @see https://github.com/KasukuSakura/mirai-login-solver-sakura
+2023-06-05 15:04:10 I/Bot.2324776498: [SliderCaptcha] Captcha link: https://ssl.captcha.qq.com/template/wireless_mqq_captcha.html?style=simple&aid=16&uin=2324776498&sid=5744390679866214634&cap_cd=75vAIbGUiCBM7_R9fTZ3WbtPsbMYxpq0FNmPOEAKlSNLvdZrDpJPCA**&clientype=1&apptype=2
+2023-06-05 15:04:36 E/main: Exception in coroutine CoroutineOnDemandReceiveChannel
+net.mamoe.mirai.utils.channels.IllegalChannelStateException: Producer threw an exception (see cause), so completing with the exception, but current state is not Producing
+	at net.mamoe.mirai.utils.channels.CoroutineOnDemandReceiveChannel$Producer$1.invokeSuspend(OnDemandChannelImpl.kt:268)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@428387bf
+
+2023-06-05 15:04:36 I/Bot.2324776498: Bot cancelled: Job was cancelled
+2023-06-05 15:04:36 E/main: net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+
+2023-06-05 15:04:36 V/Bot.2324776498: Event: net.mamoe.mirai.console.events.AutoLoginEvent$Failure@5696c927
+2023-06-05 15:04:45 I/main: Starting mirai-console...
+2023-06-05 15:04:45 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:04:45 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:04:45 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:04:45 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:04:46 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:04:46 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:04:46 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:04:46 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:04:46 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:04:46 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:04:46 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:04:46 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:04:46 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:04:46 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:04:46 I/main: 3 plugin(s) enabled.
+2023-06-05 15:04:46 I/main: Auto-login 2324776498, protocol: ANDROID_WATCH, heartbeatStrategy: STAT_HB
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] @see https://github.com/project-mirai/mirai-login-solver-selenium
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] @see https://docs.mirai.mamoe.net/mirai-login-solver-selenium/
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] 或者输入 helper 来使用 TxCaptchaHelper 完成滑动验证码
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] Or type helper to resolve slider captcha with TxCaptchaHelper.apk
+2023-06-05 15:04:48 W/Bot.2324776498: [SliderCaptcha] TxCaptchaHelper 的在线服务疑似被屏蔽，可能无法使用。TxCaptchaHelper 现已无法满足登录QQ机器人，请在以下链接下载全新的验证器
+2023-06-05 15:04:48 W/Bot.2324776498: [SliderCaptcha] The service of TxCaptchaHelper might be blocked. We recommend you to download the new login solver plugin in below link.
+2023-06-05 15:04:48 W/Bot.2324776498: [SliderCaptcha] @see https://github.com/KasukuSakura/mirai-login-solver-sakura
+2023-06-05 15:04:48 I/Bot.2324776498: [SliderCaptcha] Captcha link: https://ssl.captcha.qq.com/template/wireless_mqq_captcha.html?style=simple&aid=16&uin=2324776498&sid=1253501312423528719&cap_cd=mmAtGNuz537OPcIxfrnpUKYhzFB3Fwr6i04flbeYr_1Ok9x4YUD4Qw**&clientype=1&apptype=2
+2023-06-05 15:05:02 E/main: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:242)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: org.jline.reader.UserInterruptException
+		at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:716)
+		at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: [CIRCULAR REFERENCE: org.jline.reader.UserInterruptException]
+
+2023-06-05 15:05:02 V/Bot.2324776498: Event: net.mamoe.mirai.console.events.AutoLoginEvent$Failure@5e7abaf7
+2023-06-05 15:05:02 I/main: mirai-console started successfully.
+2023-06-05 15:05:02 I/Bot.2324776498: Bot cancelled: Bot closed
+2023-06-05 15:05:33 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2023-06-05 15:05:33 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] 已获取登录二维码，请在手机 QQ 使用账号 2324776498 扫码
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] Fetched login qrcode, please scan via qq android with account 2324776498.
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] 
+
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+                                                                                                                     
+
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] 二维码图片如上，若看不清图片，请查看文件 /home/mcl2.15/data/top.mrxiaom.qrlogin/mirai-qrcode-2324776498-1685948733.png
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] Displaying qrcode image. If not clear, view file /home/mcl2.15/data/top.mrxiaom.qrlogin/mirai-qrcode-2324776498-1685948733.png.
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] 等待扫描二维码中
+2023-06-05 15:05:33 I/QRLogin: [QRCodeLogin] Waiting for scanning qrcode.
+2023-06-05 15:06:00 E/main: Exception in coroutine CoroutineOnDemandReceiveChannel
+net.mamoe.mirai.utils.channels.IllegalChannelStateException: Producer threw an exception (see cause), so completing with the exception, but current state is not Producing
+	at net.mamoe.mirai.utils.channels.CoroutineOnDemandReceiveChannel$Producer$1.invokeSuspend(OnDemandChannelImpl.kt:268)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@34dd6ac2
+
+2023-06-05 15:06:00 E/console: net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+
+2023-06-05 15:06:00 I/Bot.2324776498: Bot cancelled: Job was cancelled
+2023-06-05 15:10:47 I/main: Starting mirai-console...
+2023-06-05 15:10:47 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:10:47 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:10:47 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:10:47 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:10:47 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:10:47 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:10:47 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:10:47 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:10:47 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:10:47 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:10:47 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:10:47 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:10:48 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:10:48 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:10:48 I/main: 3 plugin(s) enabled.
+2023-06-05 15:10:48 I/main: Auto-login 2324776498, protocol: ANDROID_WATCH, heartbeatStrategy: STAT_HB
+2023-06-05 15:10:48 E/Bot.2324776498: Failed to load account secrets from local cache. Invalidating cache...
+net.mamoe.mirai.internal.utils.crypto.DecryptionFailedException
+	at net.mamoe.mirai.internal.utils.crypto.TEA.fail(TEA.kt:299)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption$decrypt(TEA.kt:275)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption(TEA.kt:295)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt(TEA.kt:319)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt$default(TEA.kt:318)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecretsImpl(AccountSecretsManager.kt:196)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecrets(AccountSecretsManager.kt:190)
+	at net.mamoe.mirai.internal.network.components.CombinedAccountSecretsManager.getSecrets(AccountSecretsManager.kt:238)
+	at net.mamoe.mirai.internal.network.components.AccountSecretsManagerKt.getSecretsOrCreate(AccountSecretsManager.kt:150)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.createClient(BotClientHolder.kt:42)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.access$createClient(BotClientHolder.kt:26)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:30)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:30)
+	at net.mamoe.mirai.utils.LateinitMutableProperty.getValue(LateinitMutableProperty.kt:47)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.getClient(BotClientHolder.kt:30)
+	at net.mamoe.mirai.internal.network.qimei.QimeiKt.requestQimei(Qimei.kt:43)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:207)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] @see https://github.com/project-mirai/mirai-login-solver-selenium
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] @see https://docs.mirai.mamoe.net/mirai-login-solver-selenium/
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] 或者输入 helper 来使用 TxCaptchaHelper 完成滑动验证码
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] Or type helper to resolve slider captcha with TxCaptchaHelper.apk
+2023-06-05 15:10:49 W/Bot.2324776498: [SliderCaptcha] TxCaptchaHelper 的在线服务疑似被屏蔽，可能无法使用。TxCaptchaHelper 现已无法满足登录QQ机器人，请在以下链接下载全新的验证器
+2023-06-05 15:10:49 W/Bot.2324776498: [SliderCaptcha] The service of TxCaptchaHelper might be blocked. We recommend you to download the new login solver plugin in below link.
+2023-06-05 15:10:49 W/Bot.2324776498: [SliderCaptcha] @see https://github.com/KasukuSakura/mirai-login-solver-sakura
+2023-06-05 15:10:49 I/Bot.2324776498: [SliderCaptcha] Captcha link: https://ssl.captcha.qq.com/template/wireless_mqq_captcha.html?style=simple&aid=16&uin=2324776498&sid=932107561044118137&cap_cd=qYh3nKiAjlr0sLcdgEBXED-LoLejOGRnNI3WRs6zdiyiaIgmot972g**&clientype=1&apptype=2
+2023-06-05 15:18:42 I/Bot.2324776498: [SliderCaptcha] 正在提交中...
+2023-06-05 15:18:42 I/Bot.2324776498: [SliderCaptcha] Submitting...
+2023-06-05 15:18:42 E/main: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:242)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2324776498), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:469)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2324776498), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)]
+
+2023-06-05 15:18:42 V/Bot.2324776498: Event: net.mamoe.mirai.console.events.AutoLoginEvent$Failure@5e7abaf7
+2023-06-05 15:18:42 I/Bot.2324776498: Bot cancelled: Bot closed
+2023-06-05 15:18:42 I/main: mirai-console started successfully.
+2023-06-05 15:19:05 I/main: Starting mirai-console...
+2023-06-05 15:19:05 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:19:05 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:19:05 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:19:05 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:19:06 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:19:06 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:19:06 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:19:06 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:19:06 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:19:06 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:19:06 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:19:06 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:19:06 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:19:06 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:19:06 I/main: 3 plugin(s) enabled.
+2023-06-05 15:19:06 I/main: Auto-login 2324776498, protocol: ANDROID_WATCH, heartbeatStrategy: STAT_HB
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] @see https://github.com/project-mirai/mirai-login-solver-selenium
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] @see https://docs.mirai.mamoe.net/mirai-login-solver-selenium/
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] 或者输入 helper 来使用 TxCaptchaHelper 完成滑动验证码
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] Or type helper to resolve slider captcha with TxCaptchaHelper.apk
+2023-06-05 15:19:07 W/Bot.2324776498: [SliderCaptcha] TxCaptchaHelper 的在线服务疑似被屏蔽，可能无法使用。TxCaptchaHelper 现已无法满足登录QQ机器人，请在以下链接下载全新的验证器
+2023-06-05 15:19:07 W/Bot.2324776498: [SliderCaptcha] The service of TxCaptchaHelper might be blocked. We recommend you to download the new login solver plugin in below link.
+2023-06-05 15:19:07 W/Bot.2324776498: [SliderCaptcha] @see https://github.com/KasukuSakura/mirai-login-solver-sakura
+2023-06-05 15:19:07 I/Bot.2324776498: [SliderCaptcha] Captcha link: https://ssl.captcha.qq.com/template/wireless_mqq_captcha.html?style=simple&aid=16&uin=2324776498&sid=2140217076122225771&cap_cd=SY5mfb5Mzspp-A1DFNsXTdR_CcjB8rge1O6p4QAa0dpO9XEoWQeRmw**&clientype=1&apptype=2
+2023-06-05 15:19:42 I/Bot.2324776498: [SliderCaptcha] 正在提交中...
+2023-06-05 15:19:42 I/Bot.2324776498: [SliderCaptcha] Submitting...
+2023-06-05 15:19:43 E/main: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:242)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2324776498), code=238, title=禁止登录, message=请使用手Q扫描二维码或短信登录。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:469)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(2324776498), code=238, title=禁止登录, message=请使用手Q扫描二维码或短信登录。, errorInfo=)]
+
+2023-06-05 15:19:43 V/Bot.2324776498: Event: net.mamoe.mirai.console.events.AutoLoginEvent$Failure@5e7abaf7
+2023-06-05 15:19:43 I/main: mirai-console started successfully.
+2023-06-05 15:19:43 I/Bot.2324776498: Bot cancelled: Bot closed
+2023-06-05 15:20:02 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Input/output error
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160)
+	... 7 more
+
+2023-06-05 15:20:02 W/console: Closing input service...
+2023-06-05 15:35:23 I/main: Starting mirai-console...
+2023-06-05 15:35:23 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:35:23 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:35:23 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:35:23 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:35:24 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:35:24 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:35:24 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:35:24 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:35:24 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:35:24 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:35:24 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:35:24 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:35:24 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:35:24 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:35:24 I/main: 3 plugin(s) enabled.
+2023-06-05 15:35:24 I/main: mirai-console started successfully.
+2023-06-05 15:35:24 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Bad file descriptor
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)
+	... 1 more
+
+2023-06-05 15:35:24 W/console: Closing input service...
+2023-06-05 15:37:19 I/main: Starting mirai-console...
+2023-06-05 15:37:19 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:37:19 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:37:19 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:37:19 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:37:20 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:37:20 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:37:20 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:37:20 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:37:20 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:37:20 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:37:20 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:37:20 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:37:21 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:37:21 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:37:21 I/main: 3 plugin(s) enabled.
+2023-06-05 15:37:21 I/main: mirai-console started successfully.
+2023-06-05 15:37:21 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Bad file descriptor
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)
+	... 1 more
+
+2023-06-05 15:37:21 W/console: Closing input service...
+2023-06-05 15:39:22 I/main: Starting mirai-console...
+2023-06-05 15:39:22 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:39:22 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:39:22 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:39:22 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:39:23 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:39:23 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:39:23 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:39:23 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:39:23 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:39:23 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:39:23 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:39:23 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:39:23 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:39:23 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:39:24 I/main: 3 plugin(s) enabled.
+2023-06-05 15:39:24 I/main: mirai-console started successfully.
+2023-06-05 15:39:24 E/console: Error in reading next command
+java.io.IOError: java.io.IOException: Bad file descriptor
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)
+	... 1 more
+
+2023-06-05 15:39:24 W/console: Closing input service...
+2023-06-05 15:40:51 I/main: Starting mirai-console...
+2023-06-05 15:40:51 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:40:51 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:40:51 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:40:51 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:40:52 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:40:52 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:40:52 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:40:52 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:40:52 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:40:52 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:40:52 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:40:52 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:40:52 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:40:52 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:40:53 I/main: 3 plugin(s) enabled.
+2023-06-05 15:40:53 I/main: mirai-console started successfully.
+2023-06-05 15:41:19 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2023-06-05 15:41:19 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2023-06-05 15:41:20 I/Bot.2324776498: Loaded account secrets from local cache.
+2023-06-05 15:41:20 I/Bot.2324776498: Saved account secrets to local cache for fast login.
+2023-06-05 15:41:20 I/Bot.2324776498: Login successful.
+2023-06-05 15:41:21 V/Bot.2324776498: Event: BotOnlineEvent(bot=Bot(2324776498))
+2023-06-05 15:41:21 I/Bot.2324776498: Bot login successful.
+2023-06-05 15:41:52 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 15:41:52 I/stdout: !群帮助
+2023-06-05 15:41:52 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 15:41:52 W/template: Linked class com.alibaba.fastjson.JSONObject in fastjson-1.2.58.jar but plugin not depend on it.
+2023-06-05 15:41:52 W/template: Class loading logic may change in feature.
+2023-06-05 15:41:52 W/JvmPlugin[fastjson-1.2.58.jar]: Linked class org.springframework.util.LinkedMultiValueMap in spring-core-5.1.15.RELEASE.jar but plugin not depend on it.
+2023-06-05 15:41:52 W/JvmPlugin[fastjson-1.2.58.jar]: Class loading logic may change in feature.
+2023-06-05 15:41:52 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9111], internalIds=[-516222904], from group 2595931767 to 549951025 at 1685950912], content=!群帮助]群Bot帮助
+1.!图片 - 获取上传的随机图片
+2.!禁言@对方 禁言时间(单位:秒) - 禁言指定群员
+3.!解禁@被禁群员 - 解禁言指定群员
+4.删除好友 - 需要添加bot好友，在bot对话界面发送可以删除bot好友
+5.!踢出@对方 - 踢出指定成员
+6.!上传【图片】 - 上传一张图片到数据库
+7.!随机图片 - P站杂图（非H）
+8.!搜歌 - 调用可以查询歌的id(目前仅支持网易云)
+9.!点歌 - 使用搜歌的id调用
+10.!签到 - 每日签到获取随机金币
+12.!问 -在问后面拼接需要问的东西，bot会回答你的问题
+
+2023-06-05 15:43:25 I/main: Starting mirai-console...
+2023-06-05 15:43:25 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:43:25 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:43:25 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:43:25 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:43:26 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:43:26 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:43:26 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:43:26 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:43:26 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:43:26 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:43:26 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:43:26 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:43:26 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:43:26 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:43:26 I/main: 3 plugin(s) enabled.
+2023-06-05 15:43:26 I/main: mirai-console started successfully.
+2023-06-05 15:44:02 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 15:44:02 I/stdout: !群帮助
+2023-06-05 15:44:02 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 15:44:02 V/Bot.2324776498: Event: BotOfflineEvent.Active(bot=Bot(2324776498), cause=null, reconnect=false)
+2023-06-05 15:44:02 I/Bot.2324776498: Bot is closed manually
+2023-06-05 15:44:02 W/QRLogin: 群消息发送失败，你的账号可能已被风控，详见本插件帖子
+2023-06-05 15:44:02 W/stderr: java.util.concurrent.CancellationException: SelectorNetworkHandler is already closed
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.sendAndExpect$suspendImpl(SelectorNetworkHandler.kt:146)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.sendAndExpect(SelectorNetworkHandler.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.network.handler.NetworkHandler.sendAndExpect$default(NetworkHandler.kt:207)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.outgoing.MessageProtocolStrategy.sendPacket$suspendImpl(MessageProtocolStrategy.kt:35)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.outgoing.MessageProtocolStrategy.sendPacket(MessageProtocolStrategy.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.impl.GeneralMessageSenderProtocol$GeneralMessageSender.sendSinglePacket(GeneralMessageSenderProtocol.kt:124)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.impl.GeneralMessageSenderProtocol$GeneralMessageSender.sendAllPackets(GeneralMessageSenderProtocol.kt:104)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.impl.GeneralMessageSenderProtocol$GeneralMessageSender.process(GeneralMessageSenderProtocol.kt:76)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.outgoing.OutgoingMessageProcessorAdapter.process(OutgoingMessagePipelineProcessor.kt:26)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.outgoing.OutgoingMessageProcessorAdapter.process(OutgoingMessagePipelineProcessor.kt:20)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.pipeline.AbstractProcessorPipeline.process$suspendImpl(ProcessorPipeline.kt:287)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.pipeline.AbstractProcessorPipeline.process(ProcessorPipeline.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.MessageProtocolFacadeImpl.preprocessAndSendOutgoingImpl(MessageProtocolFacade.kt:361)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.MessageProtocolFacadeImpl.preprocessAndSendOutgoing(MessageProtocolFacade.kt:345)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.message.protocol.MessageProtocolFacade$INSTANCE.preprocessAndSendOutgoing(MessageProtocolFacade.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.contact.AbstractUserKt.sendMessageImpl(AbstractUser.kt:263)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.contact.CommonGroupImpl.sendMessage$suspendImpl(GroupImpl.kt:221)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.internal.contact.CommonGroupImpl.sendMessage(GroupImpl.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.contact.Group$sendMessage$1.invoke(Group.kt)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.contact.Group$sendMessage$1.invoke(Group.kt)
+2023-06-05 15:44:02 W/stderr: 	at kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$1.invokeSuspend(IntrinsicsJvm.kt:205)
+2023-06-05 15:44:02 W/stderr: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+2023-06-05 15:44:02 W/stderr: 	at kotlin.coroutines.ContinuationKt.startCoroutine(Continuation.kt:115)
+2023-06-05 15:44:02 W/stderr: 	at me.him188.kotlin.jvm.blocking.bridge.internal.RunSuspendKt.$runSuspend$(RunSuspend.kt:18)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.contact.Group.sendMessage(Group.kt)
+2023-06-05 15:44:02 W/stderr: 	at 0010.mirai.jar//com.example.plugin.Template.lambda$onEnable$0(Template.java:81)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.event.EventChannel$subscribeAlways$2$1.invoke(EventChannel.kt:600)
+2023-06-05 15:44:02 W/stderr: 	at net.mamoe.mirai.event.EventChannel$subscribeAlways$2$1.invoke(EventChannel.kt:600)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.InterruptibleKt.runInterruptibleInExpectedContext(Interruptible.kt:51)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.InterruptibleKt.access$runInterruptibleInExpectedContext(Interruptible.kt:1)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.InterruptibleKt$runInterruptible$2.invokeSuspend(Interruptible.kt:43)
+2023-06-05 15:44:02 W/stderr: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+2023-06-05 15:44:02 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+2023-06-05 15:44:02 W/QRLogin: 群消息发送失败，你的账号可能已被风控，详见本插件帖子
+2023-06-05 15:44:02 I/Bot.2324776498: Bot cancelled: Job was cancelled
+2023-06-05 15:49:20 I/main: Starting mirai-console...
+2023-06-05 15:49:20 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 15:49:20 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 15:49:20 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 15:49:20 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 15:49:21 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 15:49:21 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 15:49:21 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 15:49:21 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 15:49:21 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 15:49:21 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 15:49:21 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 15:49:21 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 15:49:21 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 15:49:21 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 15:49:21 I/main: 3 plugin(s) enabled.
+2023-06-05 15:49:21 I/main: mirai-console started successfully.
+2023-06-05 15:49:31 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2023-06-05 15:49:31 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2023-06-05 15:49:32 I/Bot.2324776498: Loaded account secrets from local cache.
+2023-06-05 15:49:32 I/Bot.2324776498: Saved account secrets to local cache for fast login.
+2023-06-05 15:49:32 I/Bot.2324776498: Login successful.
+2023-06-05 15:49:33 V/Bot.2324776498: Event: BotOnlineEvent(bot=Bot(2324776498))
+2023-06-05 15:49:33 I/Bot.2324776498: Bot login successful.
+2023-06-05 15:50:35 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> !图片
+2023-06-05 15:50:35 I/stdout: !图片
+2023-06-05 15:50:35 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 15:50:35 I/stdout: 走服务器
+2023-06-05 15:50:35 I/stdout: http://localhost:9000/image/getImage/1
+2023-06-05 15:50:35 W/template: Linked class com.alibaba.fastjson.JSONObject in fastjson-1.2.58.jar but plugin not depend on it.
+2023-06-05 15:50:35 W/template: Class loading logic may change in feature.
+2023-06-05 15:50:35 W/JvmPlugin[fastjson-1.2.58.jar]: Linked class org.springframework.util.LinkedMultiValueMap in spring-core-5.1.15.RELEASE.jar but plugin not depend on it.
+2023-06-05 15:50:35 W/JvmPlugin[fastjson-1.2.58.jar]: Class loading logic may change in feature.
+2023-06-05 15:50:35 I/stdout: 图片名称：5fdb76fa-c60b-42ef-86e3-9c5062558615.jpg
+2023-06-05 15:50:43 V/Bot.2324776498: Group(755675195) <- [mirai:at:2595931767]图片来力,图片id:1467[mirai:image:{F7ED567E-D984-0412-FB57-FC53DB0CF4A1}.jpg, width=2400, height=1350, size=897759, type=JPG, isEmoji=false]
+2023-06-05 15:50:45 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> bot暂时复活
+2023-06-05 15:50:45 I/stdout: bot暂时复活
+2023-06-05 16:08:11 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 16:08:11 I/stdout: !群帮助
+2023-06-05 16:08:11 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 16:08:12 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9114], internalIds=[-503543446], from group 2595931767 to 549951025 at 1685952491], content=!群帮助]群Bot帮助
+1.!图片 - 获取上传的随机图片
+2.!禁言@对方 禁言时间(单位:秒) - 禁言指定群员
+3.!解禁@被禁群员 - 解禁言指定群员
+4.删除好友 - 需要添加bot好友，在bot对话界面发送可以删除bot好友
+5.!踢出@对方 - 踢出指定成员
+6.!上传【图片】 - 上传一张图片到数据库
+7.!随机图片 - P站杂图（非H）
+8.!搜歌 - 调用可以查询歌的id(目前仅支持网易云)
+9.!点歌 - 使用搜歌的id调用
+10.!签到 - 每日签到获取随机金币
+12.!问 -在问后面拼接需要问的东西，bot会回答你的问题
+
+2023-06-05 16:11:35 I/stdout: [mirai:image:{D5F855B9-6F05-80D1-D07A-DF8539670F67}.jpg, width=1920, height=864, size=166425, type=JPG, isEmoji=false]
+2023-06-05 16:11:35 V/Bot.2324776498: [我的电脑(802065892)] ¿(787978238) -> [mirai:image:{D5F855B9-6F05-80D1-D07A-DF8539670F67}.jpg, width=1920, height=864, size=166425, type=JPG, isEmoji=false]
+2023-06-05 16:11:45 V/Bot.2324776498: [我的电脑(802065892)] ¿(787978238) -> 终于打完了
+2023-06-05 16:11:45 I/stdout: 终于打完了
+2023-06-05 16:18:26 V/Bot.2324776498: Event: BotOfflineEvent.Active(bot=Bot(2324776498), cause=null, reconnect=false)
+2023-06-05 16:18:26 I/Bot.2324776498: Bot is closed manually
+2023-06-05 16:18:26 I/Bot.2324776498: Bot cancelled: Job was cancelled
+2023-06-05 16:19:27 I/main: Starting mirai-console...
+2023-06-05 16:19:27 I/main: 
+
+===============================[ Mirai console 2.15.0-dev-98 ]================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-06-05 16:19:27 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.
+2023-06-05 16:19:27 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies
+2023-06-05 16:19:27 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-06-05 16:19:28 I/fix-protocol-version: 协议版本检查更新...
+2023-06-05 16:19:28 I/fix-protocol-version:   正在查找并应用本地协议更新...
+2023-06-05 16:19:28 I/fix-protocol-version: @ 没有本地协议更新
+2023-06-05 16:19:28 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1
+2023-06-05 16:19:28 I/QRLogin: Plugin version: 0.1.8
+2023-06-05 16:19:28 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用
+2023-06-05 16:19:28 I/plugin: Successfully loaded plugin QRLogin v0.1.8
+2023-06-05 16:19:28 I/plugin: Successfully loaded plugin template v1.0.0
+2023-06-05 16:19:29 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-06-05 16:19:29 I/fix-protocol-version: 当前各协议版本日期: 
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00
+MACOS          6.7.9         1970-01-01T08:00+08:00
+
+2023-06-05 16:19:29 I/main: 3 plugin(s) enabled.
+2023-06-05 16:19:29 I/main: mirai-console started successfully.
+2023-06-05 16:19:38 W/QRLoginSolver: 当前没有桌面环境，将不使用窗口式扫码登录监听器。
+2023-06-05 16:19:38 I/QRLoginSolver: 登录解决器更换为 QRLoginSolver
+2023-06-05 16:19:38 I/Bot.2324776498: Loaded account secrets from local cache.
+2023-06-05 16:19:39 I/Bot.2324776498: Saved account secrets to local cache for fast login.
+2023-06-05 16:19:39 I/Bot.2324776498: Login successful.
+2023-06-05 16:19:39 V/Bot.2324776498: Event: BotOnlineEvent(bot=Bot(2324776498))
+2023-06-05 16:19:39 I/Bot.2324776498: Bot login successful.
+2023-06-05 16:20:26 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 16:20:26 I/stdout: !群帮助
+2023-06-05 16:20:26 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 16:20:26 W/template: Linked class com.alibaba.fastjson.JSONObject in fastjson-1.2.58.jar but plugin not depend on it.
+2023-06-05 16:20:26 W/template: Class loading logic may change in feature.
+2023-06-05 16:20:26 W/JvmPlugin[fastjson-1.2.58.jar]: Linked class org.springframework.util.LinkedMultiValueMap in spring-core-5.1.15.RELEASE.jar but plugin not depend on it.
+2023-06-05 16:20:26 W/JvmPlugin[fastjson-1.2.58.jar]: Class loading logic may change in feature.
+2023-06-05 16:20:27 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9116], internalIds=[639085353], from group 2595931767 to 549951025 at 1685953226], content=!群帮助]群Bot帮助
+1.!图片 - 获取上传的随机图片
+2.!禁言@对方 禁言时间(单位:秒) - 禁言指定群员
+3.!解禁@被禁群员 - 解禁言指定群员
+4.删除好友 - 需要添加bot好友，在bot对话界面发送可以删除bot好友
+5.!踢出@对方 - 踢出指定成员
+6.!上传【图片】 - 上传一张图片到数据库
+7.!随机图片 - P站杂图（非H）
+8.!搜歌 - 调用可以查询歌的id(目前仅支持网易云)
+9.!点歌 - 使用搜歌的id调用
+10.!签到 - 每日签到获取随机金币
+12.!问 -在问后面拼接需要问的东西，bot会回答你的问题
+
+2023-06-05 16:21:31 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> !图片
+2023-06-05 16:21:31 I/stdout: !图片
+2023-06-05 16:21:31 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 16:21:32 I/stdout: 图片名称：923403f1-0219-46fb-9204-3c0ba8c68c0e.jpg
+2023-06-05 16:21:33 V/Bot.2324776498: Group(755675195) <- [mirai:at:2595931767]图片来力,图片id:1388[mirai:image:{1DAD1329-D498-BD6B-FC2B-7598557C267D}.jpg, width=2000, height=3000, size=3075455, type=JPG, isEmoji=false]
+2023-06-05 16:21:43 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 好，bot火了
+2023-06-05 16:21:43 I/stdout: 好，bot火了
+2023-06-05 16:21:46 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 活
+2023-06-05 16:21:46 I/stdout: 活
+2023-06-05 16:23:55 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !搜歌好运来
+2023-06-05 16:23:55 I/stdout: !搜歌好运来
+2023-06-05 16:23:55 I/stdout: http://localhost:9000/music/getmusic?name=%E5%A5%BD%E8%BF%90%E6%9D%A5
+2023-06-05 16:23:56 V/Bot.2324776498: Group(549951025) <- 搜索到以下結果:
+id:333750
+好运来---祖海
+[无]
+
+id:1846279904
+好运来---凤凰传奇
+[《梦幻西游网页版》周年庆主题曲]
+
+id:1490642852
+好运来---艾北
+[无]
+
+id:509781260
+好运来---GAI周延
+[电影《羞羞的铁拳》推广曲]
+
+id:1927135570
+好运来---你家七哥ya
+[无]
+
+id:526472019
+好运来---SNH48
+[无]
+
+id:1344152614
+好运来---茶理理
+[无]
+
+id:1921234993
+好运来---浅影阿
+[无]
+
+id:260748
+好运来---龙飘飘
+[无]
+
+id:1485013893
+好运来---无奈大明哥
+[无]
+
+
+2023-06-05 16:29:04 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> [mirai:image:{65B95703-9AB8-6DD8-EF5C-8D1679A64883}.png, width=1920, height=925, size=791963, type=PNG, isEmoji=false]
+2023-06-05 16:29:04 I/stdout: [mirai:image:{65B95703-9AB8-6DD8-EF5C-8D1679A64883}.png, width=1920, height=925, size=791963, type=PNG, isEmoji=false]
+2023-06-05 16:29:07 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 开发者集会（
+2023-06-05 16:29:07 I/stdout: 开发者集会（
+2023-06-05 16:31:15 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !问screen需要恢复之前打开的会话窗口命令是什么，screen的会话日志在哪
+2023-06-05 16:31:15 I/stdout: !问screen需要恢复之前打开的会话窗口命令是什么，screen的会话日志在哪
+2023-06-05 16:31:15 I/stdout: !问screen需要恢复之前打开的会话窗口命令是什么，screen的会话日志在哪
+2023-06-05 16:31:15 I/stdout: http://localhost:9000/GPT/sendGPT?content=screen%E9%9C%80%E8%A6%81%E6%81%A2%E5%A4%8D%E4%B9%8B%E5%89%8D%E6%89%93%E5%BC%80%E7%9A%84%E4%BC%9A%E8%AF%9D%E7%AA%97%E5%8F%A3%E5%91%BD%E4%BB%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8Cscreen%E7%9A%84%E4%BC%9A%E8%AF%9D%E6%97%A5%E5%BF%97%E5%9C%A8%E5%93%AA&groupId=549951025
+2023-06-05 16:31:29 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9120], internalIds=[1813228554], from group 2595931767 to 549951025 at 1685953875], content=!问screen需要恢复之前打开的会话窗口命令是什么，screen的会话日志在哪]恢复之前打开的会话窗口可以使用以下命令：```screen -r```如果有多个会话，需要指定会话ID或名称。例如：```screen -r <session_id>```或者：```screen -r <session_name>```关于screen的会话日志存储在`~/.screenlog.0`文件中，其中的数字"0"表示屏幕的编号。您也可以使用`-L`选项启动会话，使其记录所有输出到屏幕的内容。
+2023-06-05 16:34:32 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 我滴bot复活辣
+2023-06-05 16:34:32 I/stdout: 我滴bot复活辣
+2023-06-05 16:34:35 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> !随机图片
+2023-06-05 16:34:35 I/stdout: !随机图片
+2023-06-05 16:34:38 V/Bot.2324776498: Group(802065892) <- [mirai:at:2595931767]图片来力[mirai:image:{EE350273-FA68-643A-38F9-606B25D95B5D}.jpg, width=1107, height=1822, size=1711353, type=JPG, isEmoji=false]
+2023-06-05 16:43:57 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !问screen要关闭一个或关闭所有会话的命令是什么，查询现在所有会话的命令又是什么
+2023-06-05 16:43:57 I/stdout: !问screen要关闭一个或关闭所有会话的命令是什么，查询现在所有会话的命令又是什么
+2023-06-05 16:43:57 I/stdout: !问screen要关闭一个或关闭所有会话的命令是什么，查询现在所有会话的命令又是什么
+2023-06-05 16:43:57 I/stdout: http://localhost:9000/GPT/sendGPT?content=screen%E8%A6%81%E5%85%B3%E9%97%AD%E4%B8%80%E4%B8%AA%E6%88%96%E5%85%B3%E9%97%AD%E6%89%80%E6%9C%89%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%91%BD%E4%BB%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9F%A5%E8%AF%A2%E7%8E%B0%E5%9C%A8%E6%89%80%E6%9C%89%E4%BC%9A%E8%AF%9D%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%88%E6%98%AF%E4%BB%80%E4%B9%88&groupId=549951025
+2023-06-05 16:44:07 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9122], internalIds=[581516863], from group 2595931767 to 549951025 at 1685954637], content=!问screen要关闭一个或关闭所有会话的命令是什么，查询现在所有会话的命令又是什么]关闭当前屏幕会话窗口可以使用以下命令：```exit```关闭所有 screen 会话可以使用以下命令：```screen -X quit```查询现在所有 screen 会话可以使用以下命令：```screen -ls```这会列出当前用户下所有的 screen 会话，包括会话ID、名称和状态等信息。
+2023-06-05 16:47:32 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !问screen怎么根据某个session_id去关闭对应的会话
+2023-06-05 16:47:32 I/stdout: !问screen怎么根据某个session_id去关闭对应的会话
+2023-06-05 16:47:32 I/stdout: !问screen怎么根据某个session_id去关闭对应的会话
+2023-06-05 16:47:32 I/stdout: http://localhost:9000/GPT/sendGPT?content=screen%E6%80%8E%E4%B9%88%E6%A0%B9%E6%8D%AE%E6%9F%90%E4%B8%AAsession_id%E5%8E%BB%E5%85%B3%E9%97%AD%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BC%9A%E8%AF%9D&groupId=549951025
+2023-06-05 16:47:39 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9124], internalIds=[-96592488], from group 2595931767 to 549951025 at 1685954852], content=!问screen怎么根据某个session_id去关闭对应的会话]您可以使用以下命令关闭给定的 Screen 会话，其中`<session_id>`是要关闭的会话的ID：```screen -S <session_id> -X quit```这个命令会向指定的会话发送一个退出的信号，从而关闭该会话。
+2023-06-05 16:50:21 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> ！图片
+2023-06-05 16:50:21 I/stdout: ！图片
+2023-06-05 16:50:32 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !图片
+2023-06-05 16:50:32 I/stdout: !图片
+2023-06-05 16:50:32 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 16:50:32 I/stdout: 图片名称：6daacc9a-7af6-4ec8-bba0-a4bc3aec9b83.jpg
+2023-06-05 16:50:32 W/stderr: java.io.FileNotFoundException: /home/bot/UserImage/BotImage/6daacc9a-7af6-4ec8-bba0-a4bc3aec9b83.jpg (No such file or directory)
+2023-06-05 16:50:32 W/stderr: 	at java.base/java.io.RandomAccessFile.open0(Native Method)
+2023-06-05 16:50:32 W/stderr: 	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:345)
+2023-06-05 16:50:32 W/stderr: 	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+2023-06-05 16:50:32 W/stderr: 	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:214)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.utils.ExternalResource$Companion.create(ExternalResource.kt:270)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.utils.ExternalResource$Companion.create$default(ExternalResource.kt:268)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.utils.ExternalResource$Companion.create(ExternalResource.kt)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.utils.ExternalResource.create(ExternalResource.kt)
+2023-06-05 16:50:32 W/stderr: 	at 0010.mirai.jar//com.example.plugin.Template.lambda$onEnable$0(Template.java:113)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.event.EventChannel$subscribeAlways$2$1.invoke(EventChannel.kt:600)
+2023-06-05 16:50:32 W/stderr: 	at net.mamoe.mirai.event.EventChannel$subscribeAlways$2$1.invoke(EventChannel.kt:600)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.InterruptibleKt.runInterruptibleInExpectedContext(Interruptible.kt:51)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.InterruptibleKt.access$runInterruptibleInExpectedContext(Interruptible.kt:1)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.InterruptibleKt$runInterruptible$2.invokeSuspend(Interruptible.kt:43)
+2023-06-05 16:50:32 W/stderr: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+2023-06-05 16:50:32 W/stderr: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+2023-06-05 16:50:32 V/Bot.2324776498: Group(549951025) <- 机器人寄了
+2023-06-05 16:50:39 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !图片
+2023-06-05 16:50:39 I/stdout: !图片
+2023-06-05 16:50:39 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 16:50:39 I/stdout: 图片名称：d6464465-aac2-4999-947c-e52689be5026.png
+2023-06-05 16:50:40 V/Bot.2324776498: Group(549951025) <- [mirai:at:2595931767]图片来力,图片id:1423[mirai:image:{B24FFA6D-D215-C87A-9C4B-DF5014F9409F}.png, width=1666, height=2500, size=3158679, type=PNG, isEmoji=false]
+2023-06-05 17:12:47 I/stdout: [mirai:image:{28B04FEE-85B6-2CF4-99B8-96084B498A1D}.jpg, width=1280, height=1804, size=300548, type=JPG, isEmoji=false]
+2023-06-05 17:12:47 V/Bot.2324776498: [我的电脑(802065892)] 花开富贵(1596732187) -> [mirai:image:{28B04FEE-85B6-2CF4-99B8-96084B498A1D}.jpg, width=1280, height=1804, size=300548, type=JPG, isEmoji=false]
+2023-06-05 17:12:56 I/stdout: 6
+2023-06-05 17:12:56 V/Bot.2324776498: [阴曹阎王府(755675195)] 神霄雷府总司驱雷掣电追魔扫秽天君(1596732187) -> 6
+2023-06-05 17:12:56 V/Bot.2324776498: [阴曹阎王府(755675195)] 神霄雷府总司驱雷掣电追魔扫秽天君(1596732187) -> [mirai:image:{CCE14AFC-226A-35D3-7471-2BBFD8FD00B7}.jpg, width=864, height=1920, size=172636, type=JPG, isEmoji=false]
+2023-06-05 17:12:56 I/stdout: [mirai:image:{CCE14AFC-226A-35D3-7471-2BBFD8FD00B7}.jpg, width=864, height=1920, size=172636, type=JPG, isEmoji=false]
+2023-06-05 17:16:11 I/stdout: 随机色图1
+2023-06-05 17:16:11 I/stdout: 1
+2023-06-05 17:16:11 V/Bot.2324776498: V桑(2595931767) -> 随机色图1
+2023-06-05 17:16:23 V/Bot.2324776498: Friend(2595931767) <- [mirai:image:{6D67DB28-6542-7245-E4D2-E19AF322F85D}.png, width=3000, height=4500, size=5303986, type=PNG, isEmoji=false]
+2023-06-05 17:19:48 I/stdout: 随机色图6
+2023-06-05 17:19:48 I/stdout: 6
+2023-06-05 17:19:48 V/Bot.2324776498: V桑(2595931767) -> 随机色图6
+2023-06-05 17:19:52 V/Bot.2324776498: Friend(2595931767) <- [mirai:image:{5ED32AB7-6974-D0D7-C723-901EE672BD15}.jpg, width=1700, height=2210, size=2627824, type=UNKNOWN, isEmoji=false]
+2023-06-05 17:20:35 I/stdout: 随机色图5
+2023-06-05 17:20:35 I/stdout: 5
+2023-06-05 17:20:35 V/Bot.2324776498: V桑(2595931767) -> 随机色图5
+2023-06-05 17:20:40 V/Bot.2324776498: Friend(2595931767) <- [mirai:image:{1C73017D-2133-18C5-5BE0-446ABFF22E7E}.jpg, width=1143, height=1600, size=1123727, type=UNKNOWN, isEmoji=false]
+2023-06-05 17:32:49 V/Bot.2324776498: [阴曹阎王府(755675195)] 装模作样五分钟(1469282935) -> 7
+2023-06-05 17:32:49 I/stdout: 7
+2023-06-05 17:34:13 V/Bot.2324776498: [阴曹阎王府(755675195)] 猫 猫³(3245480260) -> 9
+2023-06-05 17:34:13 I/stdout: 9
+2023-06-05 17:35:48 V/Bot.2324776498: [阴曹阎王府(755675195)] 她所见(2037606134) -> 18
+2023-06-05 17:35:48 I/stdout: 18
+2023-06-05 17:36:32 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们这群玩arcaea的(2729157487) -> 哪里有18+？
+2023-06-05 17:36:32 I/stdout: 哪里有18+？
+2023-06-05 17:37:35 V/Bot.2324776498: [阴曹阎王府(755675195)] 装模作样五分钟(1469282935) -> ？
+2023-06-05 17:37:35 I/stdout: ？
+2023-06-05 17:38:22 V/Bot.2324776498: [阴曹阎王府(755675195)] 她所见(2037606134) -> ？
+2023-06-05 17:38:22 I/stdout: ？
+2023-06-05 17:40:39 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> [mirai:image:{CE4F6E6B-AF32-C801-B252-6809BD27AF3C}.jpg, width=198, height=192, size=9902, type=JPG, isEmoji=true]
+2023-06-05 17:40:39 I/stdout: [mirai:image:{CE4F6E6B-AF32-C801-B252-6809BD27AF3C}.jpg, width=198, height=192, size=9902, type=JPG, isEmoji=true]
+2023-06-05 17:56:54 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> ！问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行
+2023-06-05 17:56:54 I/stdout: ！问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行
+2023-06-05 17:57:55 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> ！图片
+2023-06-05 17:57:55 I/stdout: ！图片
+2023-06-05 18:18:28 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们不是很懂你们不是很懂(1329580899) -> [mirai:image:{62A0530C-91BE-D01F-9E1F-FFF7B3D602CF}.jpg, width=2688, height=1242, size=85839, type=JPG, isEmoji=false]
+2023-06-05 18:18:28 I/stdout: [mirai:image:{62A0530C-91BE-D01F-9E1F-FFF7B3D602CF}.jpg, width=2688, height=1242, size=85839, type=JPG, isEmoji=false]
+2023-06-05 18:18:33 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们不是很懂你们不是很懂(1329580899) -> hk p12是吧
+2023-06-05 18:18:33 I/stdout: hk p12是吧
+2023-06-05 18:19:08 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 18:19:08 I/stdout: !群帮助
+2023-06-05 18:19:08 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 18:19:08 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9133], internalIds=[917201123], from group 2595931767 to 549951025 at 1685960348], content=!群帮助]群Bot帮助
+1.!图片 - 获取上传的随机图片
+2.!禁言@对方 禁言时间(单位:秒) - 禁言指定群员
+3.!解禁@被禁群员 - 解禁言指定群员
+4.删除好友 - 需要添加bot好友，在bot对话界面发送可以删除bot好友
+5.!踢出@对方 - 踢出指定成员
+6.!上传【图片】 - 上传一张图片到数据库
+7.!随机图片 - P站杂图（非H）
+8.!搜歌 - 调用可以查询歌的id(目前仅支持网易云)
+9.!点歌 - 使用搜歌的id调用
+10.!签到 - 每日签到获取随机金币
+12.!问 -在问后面拼接需要问的东西，bot会回答你的问题
+
+2023-06-05 18:19:21 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行
+2023-06-05 18:19:21 I/stdout: !问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行
+2023-06-05 18:19:21 I/stdout: !问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行
+2023-06-05 18:19:21 I/stdout: http://localhost:9000/GPT/sendGPT?content=Java%E4%BD%BF%E7%94%A8timer%E6%8C%89%E9%A1%BA%E5%BA%8F%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AE%9A%E4%BA%8E%E4%B8%A4%E5%B0%8F%E6%97%B6%E5%90%8E%E6%89%A7%E8%A1%8C%E5%92%8C%E5%8D%81%E5%88%86%E9%92%9F%E5%90%8E%E6%89%A7%E8%A1%8C%E7%9A%84%E4%BB%BB%E5%8A%A1%EF%BC%8C%E8%BF%99%E4%B8%A4%E4%B8%AA%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%B0%81%E4%BC%9A%E5%85%88%E6%89%A7%E8%A1%8C&groupId=549951025
+2023-06-05 18:19:33 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9135], internalIds=[-1737589639], from group 2595931767 to 549951025 at 1685960361], content=!问Java使用timer按顺序创建一个定于两小时后执行和十分钟后执行的任务，这两个定时任务谁会先执行]Java中的`Timer`类使用单个后台线程执行计划任务。如果存在多个计划任务，则它们按照计划完成时间顺序依次执行。因此，在您的情况下，先创建的任务(即十分钟后执行的任务)将在后创建的任务（即两小时后执行的任务）之前执行。此外，请注意`Timer`类不是线程安全的，所以当你添加或删除任务时需要考虑同步问题。
+2023-06-05 18:21:19 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> ！图片
+2023-06-05 18:21:19 I/stdout: ！图片
+2023-06-05 18:21:27 I/stdout: !图片
+2023-06-05 18:21:27 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 18:21:27 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !图片
+2023-06-05 18:21:27 I/stdout: 走服务器
+2023-06-05 18:21:27 I/stdout: http://localhost:9000/image/getImage/1
+2023-06-05 18:21:27 I/stdout: 图片名称：52f47ebc-1f00-406b-b409-55f7a92838c7.jpg
+2023-06-05 18:21:31 V/Bot.2324776498: Group(549951025) <- [mirai:at:2595931767]图片来力,图片id:1682[mirai:image:{A0815CBF-97CE-42D1-574B-FC18B1D5DDFE}.jpg, width=1800, height=2833, size=459579, type=JPG, isEmoji=false]
+2023-06-05 18:21:41 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !随机图片
+2023-06-05 18:21:41 I/stdout: !随机图片
+2023-06-05 18:21:43 V/Bot.2324776498: Group(549951025) <- [mirai:at:2595931767]图片来力[mirai:image:{E6092828-4344-201A-0B15-2F5568717140}.jpg, width=994, height=1414, size=450691, type=JPG, isEmoji=false]
+2023-06-05 18:22:14 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> !问希儿芙乐艾是谁
+2023-06-05 18:22:14 I/stdout: !问希儿芙乐艾是谁
+2023-06-05 18:22:14 I/stdout: !问希儿芙乐艾是谁
+2023-06-05 18:22:14 I/stdout: http://localhost:9000/GPT/sendGPT?content=%E5%B8%8C%E5%84%BF%E8%8A%99%E4%B9%90%E8%89%BE%E6%98%AF%E8%B0%81&groupId=802065892
+2023-06-05 18:22:21 V/Bot.2324776498: Group(802065892) <- [mirai:quote:[mirai:source:ids=[96684], internalIds=[2041320578], from group 2595931767 to 802065892 at 1685960534], content=!问希儿芙乐艾是谁]抱歉，我不清楚“希儿芙乐艾”指的是谁，可能是一个拼音转写错误或者个别名字。如果您能提供更多上下文信息，我将尽力回答您的问题。
+2023-06-05 18:22:25 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> [mirai:image:{CE4F6E6B-AF32-C801-B252-6809BD27AF3C}.jpg, width=198, height=192, size=9902, type=JPG, isEmoji=true]
+2023-06-05 18:22:25 I/stdout: [mirai:image:{CE4F6E6B-AF32-C801-B252-6809BD27AF3C}.jpg, width=198, height=192, size=9902, type=JPG, isEmoji=true]
+2023-06-05 18:34:27 V/Bot.2324776498: [我的电脑(802065892)] 文件传输助手(1469282935) -> [mirai:image:{37EEFFDA-9E77-80CD-EDA4-E0DFE9E8A4F5}.jpg, width=805, height=1000, size=96914, type=JPG, isEmoji=true]
+2023-06-05 18:34:27 I/stdout: [mirai:image:{37EEFFDA-9E77-80CD-EDA4-E0DFE9E8A4F5}.jpg, width=805, height=1000, size=96914, type=JPG, isEmoji=true]
+2023-06-05 18:50:45 V/Bot.2324776498: [阴曹阎王府(755675195)] 神霄雷府总司驱雷掣电追魔扫秽天君(1596732187) -> 你的QQ暂不支持查看视频短片，请期待后续版本。
+2023-06-05 18:50:45 I/stdout: 你的QQ暂不支持查看视频短片，请期待后续版本。
+2023-06-05 18:54:50 I/stdout: [mirai:image:{D74CD3F1-04BB-9A37-8D7F-69E967AAA547}.jpg, width=1920, height=864, size=111298, type=JPG, isEmoji=false]
+2023-06-05 18:54:50 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们这群玩arcaea的(2729157487) -> [mirai:image:{D74CD3F1-04BB-9A37-8D7F-69E967AAA547}.jpg, width=1920, height=864, size=111298, type=JPG, isEmoji=false]
+2023-06-05 18:54:56 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们这群玩arcaea的(2729157487) -> gn粒子（确信）
+2023-06-05 18:54:56 I/stdout: gn粒子（确信）
+2023-06-05 18:56:06 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> [mirai:image:{3A1E144A-6E54-3476-9260-86586E7B9BD4}.jpg, width=1440, height=1920, size=299527, type=JPG, isEmoji=false]
+2023-06-05 18:56:06 I/stdout: [mirai:image:{3A1E144A-6E54-3476-9260-86586E7B9BD4}.jpg, width=1440, height=1920, size=299527, type=JPG, isEmoji=false]
+2023-06-05 18:56:09 I/stdout: 还就那个经典打断了
+2023-06-05 18:56:09 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 还就那个经典打断了
+2023-06-05 19:02:04 V/Bot.2324776498: [我的电脑(802065892)] [有人@我]心平气和：@你已被移出群聊(1746656098) -> 想说洗澡的，衣服都脱了，你跟我说停水了
+2023-06-05 19:02:04 I/stdout: 想说洗澡的，衣服都脱了，你跟我说停水了
+2023-06-05 19:02:11 V/Bot.2324776498: [我的电脑(802065892)] [有人@我]心平气和：@你已被移出群聊(1746656098) -> [mirai:image:{8EE5DA3F-5A62-92F2-75D3-A45372FEF158}.jpg, width=292, height=282, size=34744, type=JPG, isEmoji=true]
+2023-06-05 19:02:11 I/stdout: [mirai:image:{8EE5DA3F-5A62-92F2-75D3-A45372FEF158}.jpg, width=292, height=282, size=34744, type=JPG, isEmoji=true]
+2023-06-05 19:02:34 I/stdout: 我给你舔一遍
+2023-06-05 19:02:34 V/Bot.2324776498: [我的电脑(802065892)] 岁月静好(2330740853) -> 我给你舔一遍
+2023-06-05 19:02:41 V/Bot.2324776498: [我的电脑(802065892)] 岁月静好(2330740853) -> [mirai:image:{C1C2D635-D53E-6B39-8E06-12371C995D18}.jpg, width=364, height=274, size=106556, type=GIF, isEmoji=true]
+2023-06-05 19:02:41 I/stdout: [mirai:image:{C1C2D635-D53E-6B39-8E06-12371C995D18}.jpg, width=364, height=274, size=106556, type=GIF, isEmoji=true]
+2023-06-05 19:17:26 I/stdout: [mirai:image:{CC6D9F1C-04C1-9FEE-2A98-99F200A376BE}.jpg, width=686, height=814, size=103051, type=JPG, isEmoji=false]
+2023-06-05 19:17:26 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> [mirai:image:{CC6D9F1C-04C1-9FEE-2A98-99F200A376BE}.jpg, width=686, height=814, size=103051, type=JPG, isEmoji=false]
+2023-06-05 19:20:36 V/Bot.2324776498: [阴曹阎王府(755675195)] 不是很懂你们这群玩arcaea的(2729157487) -> 你说得对，但是《​幻日的夜​羽》是由sunrise制作的一款全新异世界偶像冒险动漫。故事发生在一个被称作「努玛祖」的幻想世界，在这里，被神选中的人将被授予「小守护进程」，导引堕天之力。你将扮演一位名为「夜羽」的神秘角色在自由的旅行中邂逅性格各异、能力独特的同伴们，和她们一起击败强敌，拯救失落的努玛祖——同时，逐步发掘「幻日」的真相。​
+2023-06-05 19:20:36 I/stdout: 你说得对，但是《​幻日的夜​羽》是由sunrise制作的一款全新异世界偶像冒险动漫。故事发生在一个被称作「努玛祖」的幻想世界，在这里，被神选中的人将被授予「小守护进程」，导引堕天之力。你将扮演一位名为「夜羽」的神秘角色在自由的旅行中邂逅性格各异、能力独特的同伴们，和她们一起击败强敌，拯救失落的努玛祖——同时，逐步发掘「幻日」的真相。​
+2023-06-05 19:22:19 V/Bot.2324776498: [阴曹阎王府(755675195)] 神霄雷府总司驱雷掣电追魔扫秽天君(1596732187) -> [mirai:image:{9FF9FC14-8FBE-6A9A-F949-1D548CD02B50}.jpg, width=864, height=1920, size=195455, type=JPG, isEmoji=false]
+2023-06-05 19:22:19 I/stdout: [mirai:image:{9FF9FC14-8FBE-6A9A-F949-1D548CD02B50}.jpg, width=864, height=1920, size=195455, type=JPG, isEmoji=false]
+2023-06-05 19:22:24 V/Bot.2324776498: [阴曹阎王府(755675195)] 神霄雷府总司驱雷掣电追魔扫秽天君(1596732187) -> 6，uu翻译把玉藻翻译成球球
+2023-06-05 19:22:24 I/stdout: 6，uu翻译把玉藻翻译成球球
+2023-06-05 19:29:02 I/stdout: 逆
+2023-06-05 19:29:02 V/Bot.2324776498: [我的电脑(802065892)] ¿(787978238) -> 逆
+2023-06-05 19:31:58 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 6
+2023-06-05 19:31:58 I/stdout: 6
+2023-06-05 19:44:03 I/stdout: [mirai:image:{42694819-3212-2A1C-C72B-026B929809BB}.jpg, width=720, height=964, size=83912, type=JPG, isEmoji=false]
+2023-06-05 19:44:03 V/Bot.2324776498: [阴曹阎王府(755675195)] 装模作样五分钟(1469282935) -> [mirai:image:{42694819-3212-2A1C-C72B-026B929809BB}.jpg, width=720, height=964, size=83912, type=JPG, isEmoji=false]
+2023-06-05 19:44:51 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=1469282935, messageIds=[747036], messageInternalIds=[1943367117], messageTime=1685965443, operator=NormalMember(1469282935), group=Group(755675195), author=NormalMember(1469282935))
+2023-06-05 19:50:11 V/Bot.2324776498: [阴曹阎王府(755675195)] 猫 猫³(3245480260) -> [mirai:image:{2727B131-1E34-917D-9563-E95E688C7A95}.jpg, width=82, height=72, size=1931, type=JPG, isEmoji=true]
+2023-06-05 19:50:11 I/stdout: [mirai:image:{2727B131-1E34-917D-9563-E95E688C7A95}.jpg, width=82, height=72, size=1931, type=JPG, isEmoji=true]
+2023-06-05 20:18:53 V/Bot.2324776498: [我的电脑(802065892)] ¿(787978238) -> [mirai:origin:FORWARD,ywiD31wL1KyM0X5LcCkAFSxY+EgLG3cqU4Sw0H95/+QjMSO4PxGvXSvVM/hMzXlk]ForwardMessage(preview=[EMP:  [图片], EMP:  [图片], EMP:  [图片], EMP:  [图片]], title=EMP和ＤＲＥＡＭ的聊天记录, brief=[聊天记录], source=EMP和ＤＲＥＡＭ的聊天记录, summary=查看11条转发消息, nodeList=[Node(senderId=787978238, time=1685967454, senderName=EMP, messageChain=[mirai:image:{19507AF4-5F6E-EB1A-ACE6-463A7303CBCC}.jpg, width=1877, height=2682, size=1972065, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967455, senderName=EMP, messageChain=[mirai:image:{2D44C708-85AF-1139-32D6-0458FEFD34B8}.jpg, width=1872, height=2686, size=1881340, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967457, senderName=EMP, messageChain=[mirai:image:{1EAC6DC4-1760-8DD3-1E12-0FEEB4E9AB91}.jpg, width=1872, height=2691, size=1806199, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967458, senderName=EMP, messageChain=[mirai:image:{4D56670D-86C0-09F1-18CB-4F621A22FA66}.jpg, width=1868, height=2691, size=2271825, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967459, senderName=EMP, messageChain=[mirai:image:{A9DBB483-268F-DD0D-F39D-7A264EDEA6B6}.jpg, width=1666, height=2381, size=2540088, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967460, senderName=EMP, messageChain=[mirai:image:{F812A2FD-8B6D-C8E2-B372-85B7151C2E99}.jpg, width=1666, height=1165, size=1188600, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967462, senderName=EMP, messageChain=[mirai:image:{D0891C2C-97DD-00B6-6944-95B4E34DBA5F}.jpg, width=1872, height=2691, size=1825614, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967463, senderName=EMP, messageChain=[mirai:image:{0E725722-8AF5-12C8-3CCE-9B18BFC1B3D9}.jpg, width=1666, height=2395, size=2267931, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967464, senderName=EMP, messageChain=[mirai:image:{5175594D-9A7A-5704-FD99-4C277ECE21DA}.jpg, width=1872, height=2691, size=1906832, type=JPG, isEmoji=false]), Node(senderId=787978238, time=1685967471, senderName=EMP, messageChain=好康的), Node(senderId=3204945387, time=1685967479, senderName=ＤＲＥＡＭ, messageChain=[mirai:image:{18609AA9-B3BA-E0BD-49E0-8CCC30E4C7BB}.jpg, width=300, height=122, size=7776, type=JPG, isEmoji=true])])
+2023-06-05 20:18:53 I/stdout: [mirai:origin:FORWARD,ywiD31wL1KyM0X5LcCkAFSxY+EgLG3cqU4Sw0H95/+QjMSO4PxGvXSvVM/hMzXlk]
+2023-06-05 20:19:00 V/Bot.2324776498: [我的电脑(802065892)] ¿(787978238) -> [mirai:image:{890A17E4-4103-BA1F-0932-711EA5B83A8C}.jpg, width=87, height=82, size=2870, type=JPG, isEmoji=true]
+2023-06-05 20:19:00 I/stdout: [mirai:image:{890A17E4-4103-BA1F-0932-711EA5B83A8C}.jpg, width=87, height=82, size=2870, type=JPG, isEmoji=true]
+2023-06-05 20:24:52 I/stdout: [mirai:image:{226B0B2D-FF69-6B4F-767D-F43A326A20C9}.gif, width=44, height=44, size=8767, type=GIF, isEmoji=true]
+2023-06-05 20:24:52 V/Bot.2324776498: [阴曹阎王府(755675195)] 「千星」权限认证(546970242) -> [mirai:image:{226B0B2D-FF69-6B4F-767D-F43A326A20C9}.gif, width=44, height=44, size=8767, type=GIF, isEmoji=true]
+2023-06-05 20:25:39 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> [mirai:image:{F7084800-4595-78D3-0BC9-FE25C391A4EF}.jpg, width=861, height=1920, size=139653, type=JPG, isEmoji=false]
+2023-06-05 20:25:39 I/stdout: [mirai:image:{F7084800-4595-78D3-0BC9-FE25C391A4EF}.jpg, width=861, height=1920, size=139653, type=JPG, isEmoji=false]
+2023-06-05 20:25:41 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 无寻思这也不吓人
+2023-06-05 20:25:41 I/stdout: 无寻思这也不吓人
+2023-06-05 20:25:43 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=2595931767, messageIds=[747040], messageInternalIds=[76183239], messageTime=1685967941, operator=NormalMember(2595931767), group=Group(755675195), author=NormalMember(2595931767))
+2023-06-05 20:25:48 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 我寻思这也不吓人
+2023-06-05 20:25:48 I/stdout: 我寻思这也不吓人
+2023-06-05 20:25:55 V/Bot.2324776498: [阴曹阎王府(755675195)] 下北沢の最速伝説(2595931767) -> 找都能给和谐
+2023-06-05 20:25:55 I/stdout: 找都能给和谐
+2023-06-05 20:26:00 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=2595931767, messageIds=[747042], messageInternalIds=[1360922237], messageTime=1685967955, operator=NormalMember(2595931767), group=Group(755675195), author=NormalMember(2595931767))
+2023-06-05 20:33:27 V/Bot.2324776498: [我的电脑(802065892)] 東雪蓮Official(2817234019) -> [mirai:image:{3697C4BB-A780-D53A-7250-1DFCB713734A}.jpg, width=1280, height=2132, size=315269, type=JPG, isEmoji=false]
+2023-06-05 20:33:27 I/stdout: [mirai:image:{3697C4BB-A780-D53A-7250-1DFCB713734A}.jpg, width=1280, height=2132, size=315269, type=JPG, isEmoji=false]
+2023-06-05 20:55:22 V/Bot.2324776498: [我的电脑(802065892)] 文件传输助手(1469282935) -> 这！
+2023-06-05 20:55:22 I/stdout: 这！
+2023-06-05 20:55:37 V/Bot.2324776498: [我的电脑(802065892)] 文件传输助手(1469282935) -> 看完这个发现自己还是太保守了
+2023-06-05 20:55:37 I/stdout: 看完这个发现自己还是太保守了
+2023-06-05 20:56:27 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !群帮助
+2023-06-05 20:56:27 I/stdout: !群帮助
+2023-06-05 20:56:27 I/stdout: http://localhost:9000/group/helplist
+2023-06-05 20:56:28 V/Bot.2324776498: Group(549951025) <- [mirai:quote:[mirai:source:ids=[9142], internalIds=[2138016720], from group 2595931767 to 549951025 at 1685969787], content=!群帮助]群Bot帮助
+1.!图片 - 获取上传的随机图片
+2.!禁言@对方 禁言时间(单位:秒) - 禁言指定群员
+3.!解禁@被禁群员 - 解禁言指定群员
+4.删除好友 - 需要添加bot好友，在bot对话界面发送可以删除bot好友
+5.!踢出@对方 - 踢出指定成员
+6.!上传【图片】 - 上传一张图片到数据库
+7.!随机图片 - P站杂图（非H）
+8.!搜歌 - 调用可以查询歌的id(目前仅支持网易云)
+9.!点歌 - 使用搜歌的id调用
+10.!签到 - 每日签到获取随机金币
+12.!问 -在问后面拼接需要问的东西，bot会回答你的问题
+
+2023-06-05 20:56:50 V/Bot.2324776498: [VBot(549951025)] V桑(2595931767) -> !图片
+2023-06-05 20:56:50 I/stdout: !图片
+2023-06-05 20:56:50 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 20:56:50 I/stdout: 走服务器
+2023-06-05 20:56:50 I/stdout: http://localhost:9000/image/getImage/1
+2023-06-05 20:56:50 I/stdout: 图片名称：3c86ab1f-4fff-4d61-ae62-ae4073293d1a.jpg
+2023-06-05 20:56:52 V/Bot.2324776498: Group(549951025) <- [mirai:at:2595931767]图片来力,图片id:1415[mirai:image:{25A73224-FEE6-331F-8742-1709D35A212C}.jpg, width=1920, height=1080, size=163903, type=JPG, isEmoji=false]
+2023-06-05 20:57:29 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> !图片
+2023-06-05 20:57:29 I/stdout: !图片
+2023-06-05 20:57:29 I/stdout: http://localhost:9000/send/getSend/1
+2023-06-05 20:57:29 I/stdout: 图片名称：3041394d-f3f6-4f42-8a3d-c9b0089c8c24.jpg
+2023-06-05 20:57:33 V/Bot.2324776498: Group(802065892) <- [mirai:at:2595931767]图片来力,图片id:1439[mirai:image:{4AB4C26C-D4CF-53CE-7D5B-269753622A9E}.jpg, width=885, height=1684, size=188141, type=JPG, isEmoji=false]
+2023-06-05 20:57:33 W/QRLogin: 群消息发送失败，你的账号可能已被风控，详见本插件帖子
+2023-06-05 20:57:41 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 我不理解
+2023-06-05 20:57:41 I/stdout: 我不理解
+2023-06-05 20:57:42 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> !
+2023-06-05 20:57:42 I/stdout: !
+2023-06-05 20:57:45 I/stdout: ❓
+2023-06-05 20:57:45 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> ❓
+2023-06-05 20:57:45 V/Bot.2324776498: Group(802065892) <- 命令错误
+2023-06-05 20:57:45 W/QRLogin: 群消息发送失败，你的账号可能已被风控，详见本插件帖子
+2023-06-05 20:57:56 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> 是不是在群里被屏蔽了
+2023-06-05 20:57:56 I/stdout: 是不是在群里被屏蔽了
+2023-06-05 20:58:01 I/stdout: [不支持的消息#-1400704092]
+2023-06-05 20:58:01 V/Bot.2324776498: [我的电脑(802065892)] 東雪蓮Official(2817234019) -> [不支持的消息#-1400704092][mirai:image:{3A060A99-1EC8-456F-DF0C-8CB67BF8652A}.jpg, width=702, height=960, size=97205, type=JPG, isEmoji=false]
+2023-06-05 20:58:02 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> 只能私聊接收
+2023-06-05 20:58:02 I/stdout: 只能私聊接收
+2023-06-05 20:59:17 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 草
+2023-06-05 20:59:17 I/stdout: 草
+2023-06-05 20:59:19 I/stdout: [mirai:image:{426945B9-3AF4-9437-06A0-5D51F712F3B3}.jpg, width=1920, height=1080, size=281398, type=PNG, isEmoji=false]
+2023-06-05 20:59:19 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> [mirai:image:{426945B9-3AF4-9437-06A0-5D51F712F3B3}.jpg, width=1920, height=1080, size=281398, type=PNG, isEmoji=false]
+2023-06-05 20:59:46 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> 草
+2023-06-05 20:59:46 I/stdout: 草
+2023-06-05 21:02:22 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 要明天才能解风控
+2023-06-05 21:02:22 I/stdout: 要明天才能解风控
+2023-06-05 21:02:24 I/stdout: 离谱
+2023-06-05 21:02:24 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> 离谱
+2023-06-05 21:03:12 V/Bot.2324776498: [我的电脑(802065892)] 岁月静好(2330740853) -> 等两天再整呗
+2023-06-05 21:03:12 I/stdout: 等两天再整呗
+2023-06-05 21:03:25 V/Bot.2324776498: [我的电脑(802065892)] 岁月静好(2330740853) -> nm我家就在高中边上
+2023-06-05 21:03:25 I/stdout: nm我家就在高中边上
+2023-06-05 21:03:35 V/Bot.2324776498: [我的电脑(802065892)] 岁月静好(2330740853) -> 那两天估计网络要g
+2023-06-05 21:03:35 I/stdout: 那两天估计网络要g
+2023-06-05 21:04:51 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> 草
+2023-06-05 21:04:51 I/stdout: 草
+2023-06-05 21:05:00 V/Bot.2324776498: [我的电脑(802065892)] 你已被移出群聊(2373391163) -> 建议暂时跑路
+2023-06-05 21:05:00 I/stdout: 建议暂时跑路
+2023-06-05 21:05:02 V/Bot.2324776498: [我的电脑(802065892)] 加濑大辉.mp4(2595931767) -> [mirai:image:{034B65AA-87F0-71FA-E459-007F3E578D1D}.jpg, width=1920, height=1200, size=255645, type=JPG, isEmoji=false]
+2023-06-05 21:05:02 I/stdout: [mirai:image:{034B65AA-87F0-71FA-E459-007F3E578D1D}.jpg, width=1920, height=1200, size=255645, type=JPG, isEmoji=false]
+2023-06-05 21:27:39 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747217], messageInternalIds=[1880931077], messageTime=1685971656, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 21:47:04 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747293], messageInternalIds=[220039768], messageTime=1685972817, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 21:47:06 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747290], messageInternalIds=[1631073052], messageTime=1685972803, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 21:47:10 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747280], messageInternalIds=[1128763691], messageTime=1685972768, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 21:47:12 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747277], messageInternalIds=[631165496], messageTime=1685972753, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 21:52:40 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=3553943028, messageIds=[747337], messageInternalIds=[1010626180], messageTime=1685973159, operator=NormalMember(3553943028), group=Group(755675195), author=NormalMember(3553943028))
+2023-06-05 22:02:31 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=1329580899, messageIds=[747381], messageInternalIds=[1670496827], messageTime=1685973749, operator=NormalMember(1329580899), group=Group(755675195), author=NormalMember(1329580899))
+2023-06-05 22:44:30 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=2373391163, messageIds=[747581], messageInternalIds=[1174530395], messageTime=1685976269, operator=NormalMember(2373391163), group=Group(755675195), author=NormalMember(2373391163))
+2023-06-05 22:49:03 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=2373391163, messageIds=[747599], messageInternalIds=[869187894], messageTime=1685976539, operator=NormalMember(2373391163), group=Group(755675195), author=NormalMember(2373391163))
+2023-06-05 22:51:47 V/Bot.2324776498: Event: GroupRecall(bot=Bot(2324776498), authorId=2373391163, messageIds=[747624], messageInternalIds=[2005982977], messageTime=1685976706, operator=NormalMember(2373391163), group=Group(755675195), author=NormalMember(2373391163))

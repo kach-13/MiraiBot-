@@ -1,0 +1,56 @@
+[92m2023-06-05 15:39:22 I/main: Starting mirai-console...[0m[m
+[92m2023-06-05 15:39:22 I/main: [m
+[m
+[94m===============================[ Mirai console 2.15.0-dev-98 ]================================[m
+[93m __       __ __                   __  ______                                      __[m
+[93m|  \     /  \  \                 |  \/      \                                    |  \[m
+[93m| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______[m
+[93m| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \[m
+[93m| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\[m
+[93m| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓[m
+[93m| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓[m
+[93m| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \[m
+[93m \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓[m
+[m
+[0m[m
+[92m2023-06-05 15:39:22 I/main: Backend: version 2.15.0-dev-98, built on 2023-06-04 10:38:43.[0m[m
+[92m2023-06-05 15:39:22 I/main: Frontend Terminal: version 2.15.0-dev-98, provided by Mamoe Technologies[0m[m
+[92m2023-06-05 15:39:22 I/main: Welcome to visit https://mirai.mamoe.net/[0m[m
+[92m2023-06-05 15:39:23 I/fix-protocol-version: 协议版本检查更新...[0m[m
+[92m2023-06-05 15:39:23 I/fix-protocol-version:   正在查找并应用本地协议更新...[0m[m
+[92m2023-06-05 15:39:23 I/fix-protocol-version: @ 没有本地协议更新[0m[m
+[92m2023-06-05 15:39:23 I/plugin: Successfully loaded plugin fix-protocol-version v1.5.1[0m[m
+[92m2023-06-05 15:39:23 I/QRLogin: Plugin version: 0.1.8[0m[m
+[93m2023-06-05 15:39:23 W/QRLogin: 本插件仅在 2.15.0 或以上工作，且在正式版或先行发布版(RC)中可能无法使用[0m[m
+[92m2023-06-05 15:39:23 I/plugin: Successfully loaded plugin QRLogin v0.1.8[0m[m
+[92m2023-06-05 15:39:23 I/plugin: Successfully loaded plugin template v1.0.0[0m[m
+[92m2023-06-05 15:39:23 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop[0m[m
+[92m2023-06-05 15:39:23 I/fix-protocol-version: 当前各协议版本日期: [m
+ANDROID_PHONE  8.9.35.10440  2023-02-16T15:10:14+08:00[m
+ANDROID_PAD    8.9.35.10440  2023-02-16T15:10:14+08:00[m
+ANDROID_WATCH  2.0.8         2019-06-03T20:25:31+08:00[m
+IPAD           8.9.33.614    2021-12-31T11:36:26+08:00[m
+MACOS          6.7.9         1970-01-01T08:00+08:00[m
+[0m[m
+[92m2023-06-05 15:39:24 I/main: 3 plugin(s) enabled.[0m[m
+[92m2023-06-05 15:39:24 I/main: mirai-console started successfully.[0m[m
+> [91m2023-06-05 15:39:24 E/console: Error in reading next command[m
+java.io.IOError: java.io.IOException: Bad file descriptor[m
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170)[m
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)[m
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61)[m
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923)[m
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956)[m
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651)[m
+	at net.mamoe.mirai.console.terminal.JLineInputDaemon.run(JLineInputDaemon.kt:81)[m
+	at java.base/java.lang.Thread.run(Thread.java:829)[m
+Caused by: java.io.IOException: Bad file descriptor[m
+	at java.base/java.io.FileInputStream.read0(Native Method)[m
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)[m
+	at org.jline.utils.NonBlockingInputStreamImpl.run(NonBlockingInputStreamImpl.java:216)[m
+	... 1 more[m
+[0m[m
+[93m2023-06-05 15:39:24 W/console: Closing input service...[0m[m
+./Start: line 2: 93318 Killed                  java -cp "$CLASSPATH:./onekey-libraries/*" net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader
+./Start: line 2: 97000 Killed                  java -cp "$CLASSPATH:./onekey-libraries/*" net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader
+./Start: line 2: 97753 Killed                  java -cp "$CLASSPATH:./onekey-libraries/*" net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader

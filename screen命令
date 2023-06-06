@@ -1,0 +1,10 @@
+终端输入 screen  启动screen 窗口并执行需要后台执行的命令
+当需要后台执行时在终端输入Ctrl + A ，Ctrl + D，然后就可以关闭终端
+当需要恢复会话窗口市执行scree -r（单会话直接执行，多会话需要指定会话id,如screen -r (session_id) ）
+
+列出所有会话列表的命令 screen -ls
+关闭一个会话 exit, 关闭所有 creen -X quit
+screen -S <session_id> -X quit```这个命令会向指定的会话发送一个退出的信号，从而关闭该会话
+
+查看java进程命令
+ps -ef | grep java
